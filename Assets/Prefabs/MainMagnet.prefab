@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5550441667234077772}
   - component: {fileID: 4830204560185555688}
   - component: {fileID: 5633309900888247799}
-  - component: {fileID: 1060863277095769528}
   m_Layer: 0
   m_Name: MainMagnet
   m_TagString: Untagged
@@ -45,7 +44,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222441741317761647}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -110,18 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
---- !u!114 &1060863277095769528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222441741317761647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16307a0356a51714a972e7564d813b2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &970763183176104613
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +556,7 @@ GameObject:
   - component: {fileID: 4134213732793649663}
   - component: {fileID: 4374653869550123371}
   - component: {fileID: 2041060470399837182}
+  - component: {fileID: 3017290378381502659}
   m_Layer: 0
   m_Name: MoveHandle
   m_TagString: Untagged
@@ -690,6 +678,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3017290378381502659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149178921094237405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16307a0356a51714a972e7564d813b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!1 &7204539093869749572
 GameObject:
   m_ObjectHideFlags: 0

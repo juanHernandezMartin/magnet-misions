@@ -5,14 +5,13 @@ using UnityEngine;
 public class Dragable : MonoBehaviour
 {
     private bool grabbed;
-    private Rigidbody2D rb;
+    public Rigidbody2D rbMagnet;
     //public bool allowHorizontal;
     //public bool allowVertical;
 
     private void Awake()
     {
         grabbed = false;
-        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnMouseDown()
@@ -29,7 +28,7 @@ public class Dragable : MonoBehaviour
     {
         if (grabbed)
         {
-            rb.velocity = Vector2.zero;
+            rbMagnet.velocity = Vector2.zero;
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = Camera.main.nearClipPlane;
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePos);
@@ -39,7 +38,7 @@ public class Dragable : MonoBehaviour
 
             //Vector3 newVelocity = worldPosition - transform.position;
             //rb.velocity = Vector3.Lerp(rb.velocity, newVelocity, 2 * Time.deltaTime);
-            rb.velocity = (worldPosition - transform.position) * 20;
+            rbMagnet.velocity = (worldPosition - transform.position) * 20;
         }
     }
 

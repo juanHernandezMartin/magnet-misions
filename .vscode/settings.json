@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "magnet misions.sln"
+    "dotnet.defaultSolution": "magnet-misions.sln"
 }
