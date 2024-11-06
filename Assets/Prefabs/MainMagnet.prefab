@@ -35,6 +35,7 @@ Transform:
   - {fileID: 4134213732793649663}
   - {fileID: 2457418010066119776}
   - {fileID: 3156132175740003497}
+  - {fileID: 719004196061408796}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4830204560185555688
@@ -193,6 +194,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1044473113012141272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719004196061408796}
+  - component: {fileID: 4139388845855950323}
+  m_Layer: 6
+  m_Name: RightStopper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &719004196061408796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044473113012141272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.16, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 5550441667234077772}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4139388845855950323
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044473113012141272}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &2378146287135420928
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2187937464631715457}
+  - component: {fileID: 5874399266367364627}
   m_Layer: 0
   m_Name: Magnet
   m_TagString: Untagged
@@ -226,6 +295,19 @@ Transform:
   - {fileID: 1647788085532224072}
   m_Father: {fileID: 5550441667234077772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5874399266367364627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2378146287135420928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d59b3fd1db471d4c85b685d932e83ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNorth: 1
 --- !u!1 &2580058824974087285
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3156132175740003497}
   - component: {fileID: 4439155109127128407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftStopper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +334,7 @@ Transform:
   m_GameObject: {fileID: 2580058824974087285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: 0, z: 0}
+  m_LocalPosition: {x: -1.16, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -557,6 +639,7 @@ GameObject:
   - component: {fileID: 4374653869550123371}
   - component: {fileID: 2041060470399837182}
   - component: {fileID: 3017290378381502659}
+  - component: {fileID: 7605924484769550211}
   m_Layer: 0
   m_Name: MoveHandle
   m_TagString: Untagged
@@ -690,7 +773,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16307a0356a51714a972e7564d813b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  rbMagnet: {fileID: 5633309900888247799}
+--- !u!50 &7605924484769550211
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149178921094237405}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7204539093869749572
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +896,8 @@ GameObject:
   - component: {fileID: 2457418010066119776}
   - component: {fileID: 7300685817798764145}
   - component: {fileID: 808344101919210282}
+  - component: {fileID: 4155333329692141478}
+  - component: {fileID: 6826279798391261261}
   m_Layer: 0
   m_Name: RotateMagnet
   m_TagString: Untagged
@@ -896,3 +1008,44 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &4155333329692141478
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188325740867535834}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!114 &6826279798391261261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188325740867535834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118b224b6af21ec4284a32e661b5ad83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMagnet: {fileID: 5874399266367364627}
+  timeToRotate: 0.3
