@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6301743364899201786}
   - component: {fileID: 3192591441199466107}
   - component: {fileID: 7257099344615534029}
+  - component: {fileID: 3871326866522193784}
   m_Layer: 0
   m_Name: RestartButton
   m_TagString: Untagged
@@ -121,6 +122,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.50000006
+--- !u!114 &3871326866522193784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4380669581871285446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a8ed4e9e1130842bc06ded68fe901f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4544175113731273539
 GameObject:
   m_ObjectHideFlags: 0
