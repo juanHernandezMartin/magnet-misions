@@ -41,22 +41,4 @@ public class Dragable : MonoBehaviour
             rbMagnet.velocity = (worldPosition - transform.position) * 20;
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.transform.gameObject.CompareTag("NoGrab"))
-        {
-            grabbed = false;
-        }
-
-        if (col.transform.gameObject.CompareTag("Placed"))
-        {
-            grabbed = false;
-        }
-
-        if (col.transform.gameObject.CompareTag("NewGameIndicator"))
-        {
-            grabbed = false;
-        }
-    }
 }
