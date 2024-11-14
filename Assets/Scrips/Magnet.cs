@@ -65,7 +65,9 @@ public class Magnet : MonoBehaviour
             force = -force;
         }
 
-        rb.AddForce(Vector2.up * force * Time.deltaTime);
+        Vector3 forceDirection = transform.position - targetMagnet.position;
+
+        rb.AddForce(forceDirection * force * Time.deltaTime);
     }
 
 }
