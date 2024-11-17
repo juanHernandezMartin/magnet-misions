@@ -62,8 +62,10 @@ public class Magnet : MonoBehaviour
 
         if (targetMagnet.position.y < transform.position.y)
         {
-            force = -force;
+            //
         }
+
+        force = -force;
 
         Vector3 forceDirection = transform.position - targetMagnet.position;
 
