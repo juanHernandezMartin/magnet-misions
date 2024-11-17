@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1794172058772575104}
   - component: {fileID: 3600658811777027779}
   - component: {fileID: 1255389157474077267}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: MagnetTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 20}
+  m_Size: {x: 0.51, y: 20}
   m_EdgeRadius: 0
 --- !u!50 &3600658811777027779
 Rigidbody2D:
