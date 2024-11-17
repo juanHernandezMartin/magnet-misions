@@ -640,6 +640,7 @@ GameObject:
   - component: {fileID: 2041060470399837182}
   - component: {fileID: 3017290378381502659}
   - component: {fileID: 7605924484769550211}
+  - component: {fileID: 5953202463100542988}
   m_Layer: 0
   m_Name: MoveHandle
   m_TagString: Untagged
@@ -656,8 +657,8 @@ Transform:
   m_GameObject: {fileID: 7149178921094237405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: -1}
-  m_LocalScale: {x: 1.3, y: -0.65, z: 1.3}
+  m_LocalPosition: {x: 0, y: -0.926, z: -1}
+  m_LocalScale: {x: 1.1, y: -0.55, z: 1.1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7538925846673236515}
@@ -801,6 +802,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5953202463100542988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149178921094237405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f84e15870847c418f57fe6475d4be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeIncrease: 1.2
+  timeToScale: 0.2
 --- !u!1 &7204539093869749572
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,6 +913,7 @@ GameObject:
   - component: {fileID: 808344101919210282}
   - component: {fileID: 4155333329692141478}
   - component: {fileID: 6826279798391261261}
+  - component: {fileID: 1349055700487507740}
   m_Layer: 0
   m_Name: RotateMagnet
   m_TagString: Untagged
@@ -914,8 +930,8 @@ Transform:
   m_GameObject: {fileID: 8188325740867535834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.16, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.1, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5155902550695006789}
@@ -1049,3 +1065,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMagnet: {fileID: 2378146287135420928}
   timeToRotate: 0.3
+--- !u!114 &1349055700487507740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188325740867535834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f84e15870847c418f57fe6475d4be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeIncrease: 1.2
+  timeToScale: 0.2

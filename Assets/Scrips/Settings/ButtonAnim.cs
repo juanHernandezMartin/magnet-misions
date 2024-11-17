@@ -7,11 +7,11 @@ public class ButtonAnim : MonoBehaviour
 {
     public float sizeIncrease;
     public float timeToScale;
-    private float originalSize;
+    private Vector3 originalSize;
 
     public void Awake()
     {
-        originalSize = transform.localScale.x;
+        originalSize = transform.localScale;
     }
 
     public void OnMouseEnter()
