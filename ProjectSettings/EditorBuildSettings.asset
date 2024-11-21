@@ -8,25 +8,64 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/MainMenu.unity
     guid: d9a2194137d5d4fa28804b74786060b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/_Init.unity
     guid: dbdb7e4bc6819441591f581699c7a393
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Commands.unity
     guid: c6496434894d049bf8b0de4fbc8b2824
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Language.unity
     guid: 631f67fadd869440b82f0835505f444b
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Questions.unity
     guid: 7313ce3f7ed89487088b720680ddb588
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Sound.unity
     guid: b8f6e4294b68b427bac374053df9f0e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Speech.unity
     guid: 57bb3b159a4464d7d813b921528142ea
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: a753511b032ec454e8a5b281a75d6a84
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 10b20bce5ee93de4e88097877e426b18
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: eac8e3caddfb5f448a0b9c8d56f275a2
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 3cf1368186b61a043a4f3f26015a4b54
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: f5490904941267441b1974a51cb2d0ca
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: 51360e2a9e24ef94aabc131fa59ab67d
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: 5ad662447b308e44e926de406e4e09b7
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: 59b4b7063820f724d989f7608c30fa55
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: d17c3216d7c802e4b8a3a74f97e1fbcf
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: c2fd86a37dcaf8e4eb65ae8ff5e929fe
+  - enabled: 1
+    path: Assets/Scenes/Level11.unity
+    guid: 161613654bd46a042845dff1b5235670
+  - enabled: 1
+    path: Assets/Scenes/Level12.unity
+    guid: 92f744b2209687f429b407ce89261ac8
+  - enabled: 1
+    path: Assets/Scenes/Test1.unity
+    guid: cc0fcac1974319a4e9281a914d77b627
   m_configObjects: {}
