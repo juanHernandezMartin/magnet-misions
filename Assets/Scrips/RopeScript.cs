@@ -7,6 +7,7 @@ public class RopeScript : MonoBehaviour
 {
     public Transform magnetEnd;
     public Transform batteryEnd;
+    public float scaleMult;
 
     // Start is called before the first frame update
     public void Start()
@@ -24,5 +25,9 @@ public class RopeScript : MonoBehaviour
         transform.position = posToMove;
 
         transform.right = magnetEnd.position - transform.position;
+
+        Vector3 scaleToSet = transform.localScale;
+        scaleToSet.x = Vector3.Distance(magnetEnd.position, batteryEnd.position ) * scaleMult;
+        transform.localScale = scaleToSet;
     }
 }
