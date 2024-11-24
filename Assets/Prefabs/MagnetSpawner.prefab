@@ -392,8 +392,7 @@ MonoBehaviour:
   MagnetsTypes:
   - {fileID: 6560295100281301481, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
   - {fileID: 2257993471723304320, guid: f6853ca526246d947956af0675a0b5e4, type: 3}
-  timeToSpawn: 0
-  spawnForce: 3
+  spawnForce: 220
   magnetsToSpawn: 5
   magnetsSpawned: 0
 --- !u!1 &5946714327000038340
@@ -551,7 +550,7 @@ Transform:
   m_GameObject: {fileID: 7668277280730448018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.453, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
