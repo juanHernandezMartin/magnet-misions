@@ -24,6 +24,10 @@ public class RopeScript : MonoBehaviour
         posToMove.x = ( magnetEnd.position.x + batteryEnd.position.x) / 2;
         transform.position = posToMove;
 
+        Vector3 posToMoveY = transform.position;
+        posToMoveY.y = ( magnetEnd.position.y + batteryEnd.position.y) / 2;
+        transform.position = posToMoveY;
+
         transform.right = magnetEnd.position - transform.position;
 
         Vector3 scaleToSet = transform.localScale;
