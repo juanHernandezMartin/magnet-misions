@@ -1000,6 +1000,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4208963258275667188, guid: 2d100fbfdc70ccd438d812a45fb9b3fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045436235683766030, guid: 2d100fbfdc70ccd438d812a45fb9b3fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898391382263599517, guid: 2d100fbfdc70ccd438d812a45fb9b3fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917253395954886827, guid: 2d100fbfdc70ccd438d812a45fb9b3fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 9120961537661619897, guid: 2d100fbfdc70ccd438d812a45fb9b3fa, type: 3}
       propertyPath: m_Name
       value: Battery
