@@ -200,6 +200,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f7c8038e3b47944b8c2476c0e21212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rbDinamo: {fileID: 4023441527655759302}
+  anSpeedToMagnetice: 250
+  electroMagnet: {fileID: 0}
+  northFacingImage: {fileID: 0}
+  southFacingImage: {fileID: 0}
+  deactivatedImage: {fileID: 0}
 --- !u!1 &4028233102033261175
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +255,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.2
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -258,7 +264,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
@@ -720,9 +726,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25, y: 0}
+  m_Offset: {x: -1, y: 0}
   serializedVersion: 2
-  m_Radius: 0.75
+  m_Radius: 1.5
 --- !u!50 &853063716884360099
 Rigidbody2D:
   serializedVersion: 4
@@ -746,7 +752,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -764,3 +770,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabbed: 0
   rbMagnet: {fileID: 853063716884360099}
+  dragVelovity: 8

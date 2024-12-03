@@ -6,6 +6,7 @@ public class Dragable : MonoBehaviour
 {
     public bool grabbed;
     public Rigidbody2D rbMagnet;
+    public float dragVelovity = 20;
     //public bool allowHorizontal;
     //public bool allowVertical;
 
@@ -38,7 +39,7 @@ public class Dragable : MonoBehaviour
 
             //Vector3 newVelocity = worldPosition - transform.position;
             //rb.velocity = Vector3.Lerp(rb.velocity, newVelocity, 2 * Time.deltaTime);
-            rbMagnet.velocity = (worldPosition - transform.position) * 20;
+            rbMagnet.velocity = (worldPosition - transform.position) * dragVelovity;
         }
     }
 }

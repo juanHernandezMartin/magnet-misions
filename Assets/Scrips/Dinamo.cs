@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class Dinamo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Rigidbody2D rbDinamo;
+    public float anSpeedToMagnetice;
 
-    // Update is called once per frame
-    void Update()
+    public Horientation electroMagnet;
+    public GameObject northFacingImage;
+    public GameObject southFacingImage;
+    public GameObject deactivatedImage;
+
+    public void Update()
     {
-        
+        if (rbDinamo.angularVelocity > anSpeedToMagnetice)
+        {
+            electroMagnet.Activated = true;
+            electroMagnet.isNorth = true;
+            northFacingImage.SetActive(true);
+            southFacingImage.SetActive(false);
+            deactivatedImage.SetActive(false);
+            return;
+        }
+
+        if (rbDinamo.angularVelocity < -anSpeedToMagnetice)
+        {
+            electroMagnet.Activated = true;
+            electroMagnet.isNorth = false;
+            northFacingImage.SetActive(false);
+            southFacingImage.SetActive(true);
+            deactivatedImage.SetActive(false);
+            return;
+        }
+
+        electroMagnet.Activated = false;
+        northFacingImage.SetActive(false);
+        southFacingImage.SetActive(false);
+        deactivatedImage.SetActive(true);
+
+        if( Input.GetKeyDown(KeyCode.P))
+        {
+            print(rbDinamo.angularVelocity);
+        }
     }
 }
