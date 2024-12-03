@@ -463,6 +463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3403844253765054384}
+  - component: {fileID: 3109220644580818776}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Untagged
@@ -488,3 +489,21 @@ Transform:
   - {fileID: 8917253395954886827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3109220644580818776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120961537661619897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f737881238d8f43b804f7697d1c4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPlug: {fileID: 6807391044205597512}
+  rightPlug: {fileID: 6586057938691409821}
+  electroMagnet: {fileID: 0}
+  northFacingImage: {fileID: 0}
+  southFacingImage: {fileID: 0}
+  deactivatedImage: {fileID: 0}
