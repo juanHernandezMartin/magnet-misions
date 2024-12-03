@@ -418,6 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNorth: 1
+  Activated: 1
 --- !u!61 &7007346985828793929
 BoxCollider2D:
   m_ObjectHideFlags: 0

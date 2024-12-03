@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNorth: 1
+  Activated: 1
 --- !u!1 &2580058824974087285
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16307a0356a51714a972e7564d813b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grabbed: 0
   rbMagnet: {fileID: 5633309900888247799}
 --- !u!50 &7605924484769550211
 Rigidbody2D:

@@ -17,7 +17,7 @@ public class Magnet : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject == parent )
+        if (col.gameObject == parent)
         {
             return;
         }
@@ -42,7 +42,10 @@ public class Magnet : MonoBehaviour
     {
         for (int magnetIndex = 0; magnetIndex < magnetsAround.Count; magnetIndex++)
         {
-            treatMaget(magnetsAround[magnetIndex], magnetsAroundH[magnetIndex]);
+            if (magnetsAroundH[magnetIndex].Activated)
+            {
+                treatMaget(magnetsAround[magnetIndex], magnetsAroundH[magnetIndex]);
+            }
         }
     }
 

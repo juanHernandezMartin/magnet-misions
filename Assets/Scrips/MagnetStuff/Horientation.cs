@@ -5,4 +5,5 @@ using UnityEngine;
 public class Horientation : MonoBehaviour
 {
     public bool isNorth;
+    public bool Activated;
 }

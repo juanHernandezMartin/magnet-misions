@@ -35,15 +35,18 @@ public class BaterryCableEnd : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && currCable != null)
         {
-            isPlugedLeftCable = false;
-            isPlugedRightCable = false;
+            if (currCable.GetComponent<Dragable>().grabbed)
+            {
+                isPlugedLeftCable = false;
+                isPlugedRightCable = false;
+            }
         }
 
-        if( rbCable != null && ( isPlugedLeftCable || isPlugedRightCable ) )
+        if (rbCable != null && (isPlugedLeftCable || isPlugedRightCable))
         {
             Vector3 forceDir = currCable.transform.position;
             forceDir = transform.position - forceDir;
-            rbCable.AddForce( forceDir * AtractionForce * Time.deltaTime );
+            rbCable.AddForce(forceDir * AtractionForce * Time.deltaTime);
         }
     }
 
