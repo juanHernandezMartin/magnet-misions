@@ -4,27 +4,27 @@ using UnityEngine;
 
 public class Dragable : MonoBehaviour
 {
-    private bool grabbed;
+    public bool grabbed;
     public Rigidbody2D rbMagnet;
     //public bool allowHorizontal;
     //public bool allowVertical;
 
-    private void Awake()
+    public void Awake()
     {
         grabbed = false;
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         grabbed = true;
     }
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
         grabbed = false;
     }
 
-    private void Update()
+    public void Update()
     {
         if (grabbed)
         {
