@@ -16,7 +16,7 @@ public class ChangeCursor : MonoBehaviour
     public void Update()
     {
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        worldPosition.z = -2;
+        worldPosition.z = -5;
         customCursorP1.transform.position = worldPosition;
     }
 }
