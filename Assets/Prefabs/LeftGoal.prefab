@@ -12,13 +12,17 @@ PrefabInstance:
       propertyPath: isNorth
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 404359085376503619, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
+      propertyPath: tagName
+      value: TornilloMagnet
+      objectReference: {fileID: 0}
     - target: {fileID: 3131277303877293421, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
       propertyPath: m_Name
-      value: LeftGoal Variant
+      value: LeftGoal
       objectReference: {fileID: 0}
     - target: {fileID: 8507341574874998906, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8507341574874998906, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
       propertyPath: m_LocalPosition.y

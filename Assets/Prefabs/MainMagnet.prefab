@@ -658,7 +658,7 @@ Transform:
   m_GameObject: {fileID: 7149178921094237405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.926, z: -1}
+  m_LocalPosition: {x: 0, y: -0.917, z: -1}
   m_LocalScale: {x: 1.1, y: -0.55, z: 1.1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -777,6 +777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabbed: 0
   rbMagnet: {fileID: 5633309900888247799}
+  dragVelovity: 20
 --- !u!50 &7605924484769550211
 Rigidbody2D:
   serializedVersion: 4
@@ -932,7 +933,7 @@ Transform:
   m_GameObject: {fileID: 8188325740867535834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 0, z: 0}
+  m_LocalPosition: {x: 1.055, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:

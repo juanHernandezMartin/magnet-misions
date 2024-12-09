@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4926050392811723881
+--- !u!1001 &5899254585746535934
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12,17 +12,29 @@ PrefabInstance:
       propertyPath: isNorth
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4190217418628346799, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190217418628346799, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190217418628346799, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6560295100281301481, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_Name
-      value: MagnetGoalSouth Variant
+      value: TorinilloSouth
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.49
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30,19 +42,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -54,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6895304226437545085, guid: 7804041d23921bb40ae1c830016e5ea7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

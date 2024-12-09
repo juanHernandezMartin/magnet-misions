@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b56941e8a6b24e4293b59b43a37b6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagName: TuercaMagnet
   nexteSceneName: Level2
   spawner: {fileID: 0}
   isNorth: 1

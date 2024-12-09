@@ -6,27 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class Goal2 : MonoBehaviour
 {
+    public string tagName;
     public string nexteSceneName;
     public MagnetSpawner spawner;
     public bool isNorth;
 
     public void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("GoalMagnet"))
+        if (col.gameObject.CompareTag(tagName))
         {
-            if (col.gameObject.GetComponent<Horientation>().isNorth == isNorth)
-            {
-                spawner.magnetsSpawned++;
-                col.gameObject.SetActive(false);
+            spawner.magnetsSpawned++;
+            col.gameObject.SetActive(false);
 
-                if (spawner.magnetsSpawned == spawner.magnetsToSpawn)
-                {
-                    SceneManager.LoadScene(nexteSceneName);
-                }
-                else
-                {
-                    spawner.SpawnMagnet();
-                }
+            if (spawner.magnetsSpawned == spawner.magnetsToSpawn)
+            {
+                SceneManager.LoadScene(nexteSceneName);
+            }
+            else
+            {
+                spawner.SpawnMagnet();
             }
         }
     }

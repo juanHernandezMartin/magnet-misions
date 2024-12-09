@@ -7,6 +7,8 @@ TagManager:
   - GoalMagnet
   - LeftCable
   - RightCable
+  - TuercaMagnet
+  - TornilloMagnet
   layers:
   - Default
   - TransparentFX
