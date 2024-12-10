@@ -20,6 +20,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftGoal
       objectReference: {fileID: 0}
+    - target: {fileID: 5816637542762393416, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
+      propertyPath: m_Name
+      value: ModelOld
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816637542762393416, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8056093391749048459, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8507341574874998906, guid: b87b8450fa742764a9f02cc75782b2dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3
