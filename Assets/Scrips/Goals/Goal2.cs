@@ -18,14 +18,9 @@ public class Goal2 : MonoBehaviour
         {
             spawner.magnetsSpawned++;
 
-            if (spawner.magnetsSpawned == spawner.magnetsToSpawn)
-            {
-                SceneManager.LoadScene(nexteSceneName);
-            }
-            else
-            {
-                AnimateMagnetEnd();
-            }
+            AnimateMagnetEnd();
+
+
         }
     }
 
@@ -46,7 +41,14 @@ public class Goal2 : MonoBehaviour
             magnet.SetActive(false);
             magnetRb.isKinematic = false;
             colMagnet.enabled = true;
-            spawner.SpawnMagnet();
+            if (spawner.magnetsSpawned == spawner.magnetsToSpawn)
+            {
+                SceneManager.LoadScene(nexteSceneName);
+            }
+            else
+            {
+                spawner.SpawnMagnet();
+            }
         });
     }
 }
