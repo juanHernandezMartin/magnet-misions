@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine;
+
 
 namespace ManetsAnims
 {
-    public class AtractionsAnim : MonoBehaviour
+    public class RepulsionAnim : MonoBehaviour
     {
         public GameObject magnetTop;
         public GameObject magnetBot;
         public bool animAtStart;
+        public float animDistance;
         public float animTime;
 
-        private float scaleMult = 4.8f;
 
         public void Start()
         {
@@ -25,16 +25,14 @@ namespace ManetsAnims
 
         public void AnimateMagnets()
         {
-            float targetY = (magnetTop.transform.position.y + magnetBot.transform.position.y) /2f;
 
-            float targetYTop = targetY + scaleMult*magnetBot.transform.localScale.x;
-            Tween topTween = magnetTop.transform.DOMoveY( targetYTop, animTime );
-            topTween.SetEase(Ease.InExpo);
+            float targetYTot = magnetTop.transform.position.y + animDistance;
+            Tween topTween = magnetTop.transform.DOMoveY( targetYTot, animTime );
+            topTween.SetEase(Ease.InOutQuad);
 
-            float targetYBot = targetY - scaleMult*magnetBot.transform.localScale.x;
+            float targetYBot = magnetBot.transform.position.y - animDistance;
             Tween botTween = magnetBot.transform.DOMoveY( targetYBot, animTime );
-            botTween.SetEase(Ease.InExpo);
+            botTween.SetEase(Ease.InOutQuad);
         }
     }
 }
-
