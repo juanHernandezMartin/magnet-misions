@@ -46,10 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0bf831d768b9be49889e42895701c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnetTop: {fileID: 3223497828366703150}
-  magnetBot: {fileID: 641508144421457156}
+  magnetTop: {fileID: 5368514098041044255}
+  magnetBot: {fileID: 5142296043109108327}
   animAtStart: 1
   animTime: 1.5
+  animPause: 2
 --- !u!1 &641508144421457156
 GameObject:
   m_ObjectHideFlags: 0

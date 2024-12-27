@@ -7,15 +7,21 @@ using UnityEngine;
 
 public class RepulsionAnim : MagnetAnim
 {
-    public GameObject magnetTop;
-    public GameObject magnetBot;
+    public Transform magnetTop;
+    public Transform magnetBot;
     public bool animAtStart;
     public float animDistance;
     public float animTime;
+    public float animPause;
+
+    private Vector3 oroginalPosTopMagnet;
+    private Vector3 oroginalPosBotMagnet;
 
 
     public void Start()
     {
+        oroginalPosTopMagnet = magnetTop.position;
+        oroginalPosBotMagnet = magnetBot.position;
         if (animAtStart)
         {
             AnimateMagnets();
@@ -25,13 +31,24 @@ public class RepulsionAnim : MagnetAnim
     public new void AnimateMagnets()
     {
 
-        float targetYTot = magnetTop.transform.position.y + animDistance;
-        Tween topTween = magnetTop.transform.DOMoveY(targetYTot, animTime);
+        float targetYTot = magnetTop.position.y + animDistance;
+        Tween topTween = magnetTop.DOMoveY(targetYTot, animTime);
         topTween.SetEase(Ease.InOutQuad);
 
-        float targetYBot = magnetBot.transform.position.y - animDistance;
-        Tween botTween = magnetBot.transform.DOMoveY(targetYBot, animTime);
+        float targetYBot = magnetBot.position.y - animDistance;
+        Tween botTween = magnetBot.DOMoveY(targetYBot, animTime);
         botTween.SetEase(Ease.InOutQuad);
+
+        botTween.OnComplete(() =>
+        {
+            Tween nothingTween = magnetTop.DOMoveY(magnetTop.position.y, animPause);
+            nothingTween.OnComplete(() =>
+            {
+                magnetTop.position = oroginalPosTopMagnet;
+                magnetBot.position = oroginalPosBotMagnet;
+                AnimateMagnets();
+            });
+        });
     }
 }
 

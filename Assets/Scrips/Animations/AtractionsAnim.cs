@@ -7,15 +7,20 @@ using UnityEngine;
 
 public class AtractionsAnim : MagnetAnim
 {
-    public GameObject magnetTop;
-    public GameObject magnetBot;
+    public Transform magnetTop;
+    public Transform magnetBot;
     public bool animAtStart;
     public float animTime;
+    public float animPause;
 
     private float scaleMult = 4.8f;
+    private Vector3 oroginalPosTopMagnet;
+    private Vector3 oroginalPosBotMagnet;
 
     public void Start()
     {
+        oroginalPosTopMagnet = magnetTop.position;
+        oroginalPosBotMagnet = magnetBot.position;
         if (animAtStart)
         {
             AnimateMagnets();
@@ -24,15 +29,26 @@ public class AtractionsAnim : MagnetAnim
 
     public new void AnimateMagnets()
     {
-        float targetY = (magnetTop.transform.position.y + magnetBot.transform.position.y) / 2f;
+        float targetY = (magnetTop.position.y + magnetBot.position.y) / 2f;
 
-        float targetYTop = targetY + scaleMult * magnetBot.transform.localScale.x;
-        Tween topTween = magnetTop.transform.DOMoveY(targetYTop, animTime);
+        float targetYTop = targetY + scaleMult * magnetBot.localScale.x;
+        Tween topTween = magnetTop.DOMoveY(targetYTop, animTime);
         topTween.SetEase(Ease.InExpo);
 
-        float targetYBot = targetY - scaleMult * magnetBot.transform.localScale.x;
-        Tween botTween = magnetBot.transform.DOMoveY(targetYBot, animTime);
+        float targetYBot = targetY - scaleMult * magnetBot.localScale.x;
+        Tween botTween = magnetBot.DOMoveY(targetYBot, animTime);
         botTween.SetEase(Ease.InExpo);
+
+        botTween.OnComplete(() =>
+        {
+            Tween nothingTween = magnetTop.DOMoveY(magnetTop.position.y, animPause);
+            nothingTween.OnComplete(() =>
+            {
+                magnetTop.position = oroginalPosTopMagnet;
+                magnetBot.position = oroginalPosBotMagnet;
+                AnimateMagnets();
+            });
+        });
     }
 }
 
