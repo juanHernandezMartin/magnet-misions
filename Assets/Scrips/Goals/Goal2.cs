@@ -12,15 +12,20 @@ public class Goal2 : MonoBehaviour
     public MagnetSpawner spawner;
     public bool isNorth;
 
+    private AudioSource audioGoal;
+
+    public void Start()
+    {
+        audioGoal = GetComponent<AudioSource>();
+    }
+
     public void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag(tagName))
         {
             spawner.magnetsSpawned++;
-
+            audioGoal.Play();
             AnimateMagnetEnd();
-
-
         }
     }
 

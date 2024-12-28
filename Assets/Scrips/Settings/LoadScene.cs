@@ -11,4 +11,9 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(nextSceneName);
     }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(nextSceneName);
+    }
 }
