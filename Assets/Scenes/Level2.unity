@@ -132,11 +132,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4578443708531850049, guid: 817fd796e0b8ef04b8970b92c1cbcb4f, type: 3}
       propertyPath: nexteSceneName
-      value: Level3
+      value: Anim3
       objectReference: {fileID: 0}
     - target: {fileID: 6209587978022828496, guid: 817fd796e0b8ef04b8970b92c1cbcb4f, type: 3}
       propertyPath: nexteSceneName
-      value: Level3
+      value: Anim3
       objectReference: {fileID: 0}
     - target: {fileID: 6316967163595415777, guid: 817fd796e0b8ef04b8970b92c1cbcb4f, type: 3}
       propertyPath: m_LocalPosition.x
