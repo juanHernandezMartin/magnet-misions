@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa552af287513fd49891227cf7b837d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Level1
+  nextSceneName: Level3
   lines:
   - Hello, welcome to the factory
   - Here you will separate nuts from screws using the magnetic force
