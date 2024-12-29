@@ -480,9 +480,12 @@ MonoBehaviour:
   - {fileID: 780395319396703255, guid: c43ce130d66fb524198b3d6b6a85d8aa, type: 3}
   - {fileID: 806039607675225413, guid: e791e4ce60a7af24c8a27632793f539c, type: 3}
   - {fileID: 2257993471723304320, guid: f6853ca526246d947956af0675a0b5e4, type: 3}
-  spawnForce: 220
-  magnetsToSpawn: 5
+  magnetsToSpawn: 8
+  magnets: []
+  magnetsRb: []
+  magnetsRender: []
   magnetsSpawned: 0
+  nextTypeOfMagnet: 0
 --- !u!1 &5946714327000038340
 GameObject:
   m_ObjectHideFlags: 0

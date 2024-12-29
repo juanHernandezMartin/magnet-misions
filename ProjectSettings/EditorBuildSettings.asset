@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/MainMenu.unity
-    guid: d9a2194137d5d4fa28804b74786060b2
-  - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/_Init.unity
     guid: dbdb7e4bc6819441591f581699c7a393
   - enabled: 0
@@ -26,11 +23,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Sound.unity
     guid: b8f6e4294b68b427bac374053df9f0e4
-  - enabled: 0
-    path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Speech.unity
-    guid: 57bb3b159a4464d7d813b921528142ea
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/LoaderScene.unity
+    guid: 0a419b71075eb1d4490991751496147a
+  - enabled: 1
+    path: Assets/Scenes/MagnetMissionsMenu.unity
     guid: b3947a3530c519f429e20531844ecff3
   - enabled: 1
     path: Assets/Scenes/Level1.unity
@@ -53,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Anim3.unity
     guid: e4968637d51c0dc4daeab255f6424b1a
+  - enabled: 1
+    path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/MainMenu.unity
+    guid: d9a2194137d5d4fa28804b74786060b2
+  - enabled: 1
+    path: Assets/LegendsOfLearningSDK/WebGLLoLDemo/Scenes/Speech.unity
+    guid: 57bb3b159a4464d7d813b921528142ea
   m_configObjects: {}
