@@ -555,16 +555,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: Level3
   lines:
-  - Hello, welcome to the factory
-  - Here you will separate nuts from screws using the magnetic force
-  - asd
-  - asd
-  - dd
-  - dddd
-  - ddasdasd
-  - dads
-  - aas
-  - d
+  - "Fantastic work! You\u2019re really getting the hang of this. Let\u2019s crank
+    it up one last time!"
+  - "For this final task, we\u2019re introducing a dynamo to generate electricity
+    for the electromagnet"
+  - A dynamo converts mechanical energy into electrical energy
+  - Basically, the faster you spin it, the more electricity it generates
+  - If you spin it in the oposite direction, the magnetic field will also be reversed
+  - "This is the final test, so give it your all. I\u2019m proud of you already"
   dialogueText: {fileID: 434109888}
   dialogueBox: {fileID: 1889464883}
   typingSpeed: 0.05

@@ -612,16 +612,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: Level2
   lines:
-  - Hello, welcome to the factory
-  - Here you will separate nuts from screws using the magnetic force
-  - asd
-  - asd
-  - dd
-  - dddd
-  - ddasdasd
-  - dads
-  - aas
-  - d
+  - "Great job with the basics! You\u2019ve got a knack for magnet management"
+  - "Now, let\u2019s add a new tool to your arsenal: electromagnets"
+  - Electromagnets are magnets that you can turn on and off with electricity
+  - "They\u2019re super useful because we can control their strength and timing!"
+  - By running an electric current through a coil of wire, we create a magnetic field
+  - Turn off the current, and the magnet stops working. Pretty neat, right?
+  - If you put the wires on the oposite poles of the baterry
+  - The magnetic field will be in the oposite direction
+  - "This means you\u2019ll be able to dynamically control which boxes are attracted
+    or repelled"
+  - Use the electromagnet to steer screws to one belt and nuts to the other
+  - Timing is everything here!
+  - "Let\u2019s see how you handle this next challenge. I\u2019ll be cheering you
+    on!"
   dialogueText: {fileID: 434109888}
   dialogueBox: {fileID: 1889464883}
   typingSpeed: 0.05
