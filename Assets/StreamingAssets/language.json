@@ -40,14 +40,51 @@
     "MMAnim2-9": "This means you’ll be able to dynamically control which boxes are attracted or repelled",
     "MMAnim2-10": "Use the electromagnet to steer screws to one belt and nuts to the other",
     "MMAnim2-11": "Timing is everything here!",
-    "MMAnim2-12": "Let’s see how you handle this next challenge. I’ll be cheering you on!"
+    "MMAnim2-12": "Let’s see how you handle this next challenge. I’ll be cheering you on!",
+
+    "MMAnim3-1": "Fantastic work! You’re really getting the hang of this. Let’s crank it up one last time!",
+    "MMAnim3-2": "For this final task, we’re introducing a dynamo to generate electricity for the electromagnet",
+    "MMAnim3-3": "A dynamo converts mechanical energy into electrical energy",
+    "MMAnim3-4": "Basically, the faster you spin it, the more electricity it generates",
+    "MMAnim3-5": "If you spin it in the oposite direction, the magnetic field will also be reversed",
+    "MMAnim3-6": "This is the final test, so give it your all. I’m proud of you already"
   },
   "es": {
     "welcome": "¡Bienvenido!",
     "readyToPlay": "¿Estás listo para jugar?",
     "greatJob": "¡Gran trabajo!",
     "pressContinue": "Presione el botón 'siguiente' para continuar.",
-    "onePlusOne": "Uno + Uno = Dos"
+    "onePlusOne": "Uno + Uno = Dos",
+
+    "MMAnim1-1": "¡Bienvenido a la fábrica! Soy Catbert, tu fiel gato trabajador, y hoy seré tu guía",
+    "MMAnim1-2": "Nuestro trabajo es separar cajas de tornillos de cajas de tuercas, ¡y usaremos el magnetismo para lograrlo!",
+    "MMAnim1-3": "Los imanes tienen dos polos: norte y sur.",
+    "MMAnim1-4": "Los polos opuestos se atraen y los polos iguales se repelen.",
+    "MMAnim1-5": "¡Usaremos esta propiedad para guiar las cajas!",
+    "MMAnim1-6": "Moviendo el imán, podemos dirigir los tornillos a una cinta y las tuercas a otra",
+    "MMAnim1-7": "Requerirá precisión y rapidez, ¡pero sé que puedes hacerlo!",
+    "MMAnim1-8": "Comencemos con una configuración simple usando un imán común para acostumbrarnos. ¿Listo? ¡Vamos allá!",
+
+    "MMAnim2-1": "¡Gran trabajo con lo básico! Tienes talento para manejar imanes",
+    "MMAnim2-2": "Ahora, añadamos una nueva herramienta a tu arsenal: los electroimanes",
+    "MMAnim2-3": "Los electroimanes son imanes que puedes encender y apagar con electricidad",
+    "MMAnim2-4": "¡Son muy útiles porque podemos controlar su fuerza y el momento en que funcionan!",
+    "MMAnim2-5": "Al pasar una corriente eléctrica por un cable enrollado, creamos un campo magnético",
+    "MMAnim2-6": "Apaga la corriente, y el imán deja de funcionar. ¡Bastante interesante, verdad?",
+    "MMAnim2-7": "Si conectas los cables a los polos opuestos de la batería",
+    "MMAnim2-8": "El campo magnético estará en la dirección opuesta",
+    "MMAnim2-9": "Esto significa que podrás controlar dinámicamente qué cajas se atraen o se repelen",
+    "MMAnim2-10": "Usa el electroimán para dirigir los tornillos a una cinta y las tuercas a otra",
+    "MMAnim2-11": "¡Aquí el tiempo lo es todo!",
+    "MMAnim2-12": "Veamos cómo manejas este próximo desafío. ¡Te estaré animando!",
+
+    "MMAnim3-1": "¡Trabajo fantástico! Estás dominando esto. ¡Vamos a subir la dificultad una última vez!",
+    "MMAnim3-2": "Para esta tarea final, vamos a introducir un dinamo para generar electricidad para el electroimán",
+    "MMAnim3-3": "Un dinamo convierte la energía mecánica en energía eléctrica",
+    "MMAnim3-4": "Básicamente, cuanto más rápido lo hagas girar, más electricidad genera",
+    "MMAnim3-5": "Si lo haces girar en la dirección opuesta, el campo magnético también se invertirá",
+    "MMAnim3-6": "Esta es la prueba final, así que da lo mejor de ti. Ya estoy orgulloso de ti"
+
   },
   "zh": {
     "welcome": "欢迎！",
