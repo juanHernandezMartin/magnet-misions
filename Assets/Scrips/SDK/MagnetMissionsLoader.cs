@@ -48,7 +48,7 @@ public class MagnetMissionsLoader : MonoBehaviour
         // Register event handlers
         LOLSDK.Instance.StartGameReceived += new StartGameReceivedHandler(HandleStartGame);
         LOLSDK.Instance.LanguageDefsReceived += new LanguageDefsReceivedHandler(HandleLanguageDefs);
-        LOLSDK.Instance.QuestionsReceived += new QuestionListReceivedHandler(HandleQuestions);
+        //LOLSDK.Instance.QuestionsReceived += new QuestionListReceivedHandler(HandleQuestions);
         LOLSDK.Instance.GameStateChanged += new GameStateChangedHandler(HandleGameStateChange);
 
         // Mock the platform-to-game messages when in the Unity editor.
@@ -91,7 +91,7 @@ public class MagnetMissionsLoader : MonoBehaviour
     // Store the questions and show them in order based on your game flow.
     void HandleQuestions (MultipleChoiceQuestionList questionList)
     {
-        Debug.Log("HandleQuestions");
+        //Debug.Log("HandleQuestions");
         SharedState.QuestionList = questionList;
         _receivedData |= LoLDataType.QUESTIONS;
     }
@@ -111,7 +111,7 @@ public class MagnetMissionsLoader : MonoBehaviour
 		string startDataFilePath = Path.Combine (Application.streamingAssetsPath, startGameJSONFilePath);
 		string langCode = "en";
 
-		Debug.Log(File.Exists (startDataFilePath));
+		//Debug.Log(File.Exists (startDataFilePath));
 
 		if (File.Exists (startDataFilePath))  {
 			string startDataAsJSON = File.ReadAllText (startDataFilePath);
@@ -134,6 +134,7 @@ public class MagnetMissionsLoader : MonoBehaviour
 		}
 
 		// Load Dev Questions from StreamingAssets
+        /*
 		string questionsFilePath = Path.Combine (Application.streamingAssetsPath, questionsJSONFilePath);
 		if (File.Exists (questionsFilePath))  {
 			string questionsDataAsJson = File.ReadAllText (questionsFilePath);
@@ -141,6 +142,7 @@ public class MagnetMissionsLoader : MonoBehaviour
 				MultipleChoiceQuestionList.CreateFromJSON(questionsDataAsJson);
 			HandleQuestions(qs);
 		}
+        */
     }
 #endif
 }

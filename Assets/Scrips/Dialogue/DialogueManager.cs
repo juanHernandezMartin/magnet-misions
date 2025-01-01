@@ -94,7 +94,7 @@ public class DialogueManager : MonoBehaviour
             this,
             languageCode);
 #else
-		LOLSDK.Instance.SpeakText(speakTextArgs.text);
+		LOLSDK.Instance.SpeakText(text);
 #endif
     }
 }

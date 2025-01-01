@@ -272,7 +272,7 @@ namespace LoLSDK
         public void GameIsReady(string gameName, string callbackGameObject, string aspectRatio, string resolution)
         {
             _gameName = gameName;
-            Debug.Log($"GameIsReady Editor - name: {gameName}, callbackGameObject: {callbackGameObject}");
+            //Debug.Log($"GameIsReady Editor - name: {gameName}, callbackGameObject: {callbackGameObject}");
         }
 
         /* *********************************************

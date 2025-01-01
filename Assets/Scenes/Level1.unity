@@ -877,6 +877,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 677933667}
     m_Modifications:
+    - target: {fileID: 1614969633397174855, guid: 817fd796e0b8ef04b8970b92c1cbcb4f, type: 3}
+      propertyPath: currentLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4578443708531850049, guid: 817fd796e0b8ef04b8970b92c1cbcb4f, type: 3}
       propertyPath: nexteSceneName
       value: Anim2

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using UnityEditor.SearchService;
+using LoLSDK;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,6 +25,8 @@ public class Goal2 : MonoBehaviour
         {
             spawner.magnetsSpawned++;
             audioGoal.Play();
+            int currentProgress = spawner.magnetsSpawned + spawner.magnetsToSpawn * (spawner.currentLevel-1);
+            LOLSDK.Instance.SubmitProgress(currentProgress, currentProgress, spawner.magnetsToSpawn * 3);
             AnimateMagnetEnd();
         }
     }
@@ -48,7 +50,14 @@ public class Goal2 : MonoBehaviour
             colMagnet.enabled = true;
             if (spawner.magnetsSpawned == spawner.magnetsToSpawn)
             {
-                SceneManager.LoadScene(nexteSceneName);
+                if (spawner.currentLevel == 3)
+                {
+                    LOLSDK.Instance.CompleteGame();
+                }
+                else
+                {
+                    SceneManager.LoadScene(nexteSceneName);
+                }
             }
             else
             {

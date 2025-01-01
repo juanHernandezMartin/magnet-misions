@@ -7,6 +7,7 @@ public class MagnetSpawner : MonoBehaviour
 {
     public List<GameObject> MagnetsTypes;
     public int magnetsToSpawn;
+    public int currentLevel = -1;
 
     [HideInInspector] public List<GameObject> magnets;
     [HideInInspector] public List<Rigidbody2D> magnetsRb;
