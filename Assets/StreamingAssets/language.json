@@ -9,16 +9,7 @@
     }
   },
   "en": {
-    "welcome": "Welcome!",
-    "readyToPlay": "Are you ready to play?",
-    "greatJob": "Great job!",
-    "pressContinue": "Press the next button to continue.",
-    "onePlusOne": "One + One = Two",
     "newGame": "New Game",
-    "continue": "Continue",
-    "pantry": "Pantry",
-    "purchasePan": "Purchase Pan",
-    "autoSave": "...Auto Saving Complete",
 
     "MMAnim1-1": "Welcome to the factory! I’m Catbert, your trusty worker cat, and I’ll be guiding you today",
     "MMAnim1-2": "Our job is to separate boxes of screws from boxes of nuts, and we’ll use magnetism to do it!",
@@ -50,11 +41,6 @@
     "MMAnim3-6": "This is the final test, so give it your all. I’m proud of you already"
   },
   "es": {
-    "welcome": "¡Bienvenido!",
-    "readyToPlay": "¿Estás listo para jugar?",
-    "greatJob": "¡Gran trabajo!",
-    "pressContinue": "Presione el botón 'siguiente' para continuar.",
-    "onePlusOne": "Uno + Uno = Dos",
     "newGame": "Nuevo Juego",
 
     "MMAnim1-1": "¡Bienvenido a la fábrica! Soy Catbert, tu fiel gato trabajador, y hoy seré tu guía",
@@ -88,11 +74,6 @@
 
   },
   "zh": {
-    "welcome": "欢迎！",
-    "readyToPlay": "你准备好玩吗",
-    "greatJob": "做得好！",
-    "pressContinue": "按“下一步”按钮继续。",
-    "onePlusOne": "一+一=二",
     "newGame": "新游戏",
 
     "MMAnim1-1": "欢迎来到工厂！我是猫伯特，你可靠的工作猫，今天我将引导你完成任务",
@@ -125,11 +106,6 @@
     "MMAnim3-6": "这是最终测试，所以全力以赴吧。我已经为你感到自豪了"
   },
   "jp": {
-    "welcome": "ようこそ!",
-    "readyToPlay": "あなたは遊ぶ準備ができていますか？",
-    "greatJob": "よくやった！",
-    "pressContinue": "続行するには '次へ'ボタンを押してください。",
-    "onePlusOne": "1 + 1 = 2",
     "newGame": "新しいゲーム",
 
     "MMAnim1-1": "工場へようこそ！私はキャットバート、頼れる作業猫で、今日はあなたを案内します",
@@ -162,11 +138,6 @@
     "MMAnim3-6": "これは最終試験ですので、全力を尽くしてください。すでにあなたを誇りに思っています"
   },
   "ru": {
-    "welcome": "Добро пожаловать!",
-    "readyToPlay": "Вы готовы играть?",
-    "greatJob": "Отличная работа!",
-    "pressContinue": "Нажмите следующую кнопку, чтобы продолжить.",
-    "onePlusOne": "один + один",
     "newGame": "Новая Игра",
 
     "MMAnim1-1": "Добро пожаловать на фабрику! Я Кэтберт, ваш надежный кот-работник, и сегодня я буду вашим гидом",
