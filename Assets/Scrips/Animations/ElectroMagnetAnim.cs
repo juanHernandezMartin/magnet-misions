@@ -30,7 +30,7 @@ public class ElectroMagnetAnim : MagnetAnim
 
     private float scaleMult = 4.8f;
 
-    public void Start()
+    public void OnEnable()
     {
         if (animAtStart)
         {

@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    public string nextSceneName;
+    public GameObject nextObjectToEnable;
+    public GameObject parent;
+    public GameObject canvasAnim;
+    public GameObject canvasGameplay;
     public string[] lines;
     [SerializeField] private TextMeshProUGUI dialogueText; // Reference to the TextMeshPro component
     [SerializeField] private GameObject dialogueBox;      // Reference to the dialogue box panel
@@ -17,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping = false;      // Flag to check if text is still being typed
     private AudioSource audioText;
 
-    public void Start()
+    public void OnEnable()
     {
         audioText = GetComponent<AudioSource>();
         dialogueLines = new Queue<string>();
@@ -52,7 +55,7 @@ public class DialogueManager : MonoBehaviour
         string languageCode = SharedState.StartGameData["languageCode"];
         string text = SharedState.LanguageDefs[line];
         StartCoroutine(TypeLine(text));
-        SpeakText( text, languageCode);
+        SpeakText(text, languageCode);
     }
 
     private IEnumerator TypeLine(string line)
@@ -72,7 +75,11 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         dialogueBox.SetActive(false); // Hide the dialogue box
-        SceneManager.LoadScene(nextSceneName); // Load the next scene
+        nextObjectToEnable.SetActive(true); // Enable the next object
+        canvasAnim.SetActive(false); // Disable the animation canvas
+        canvasGameplay.SetActive(true); // Enable the gameplay canvas
+        parent.SetActive(false); // Disable the parent object
+        //SceneManager.LoadScene(nextSceneName); // Load the next scene
     }
 
     public void Update()

@@ -12,24 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MagnetMissionsMenu.unity
     guid: b3947a3530c519f429e20531844ecff3
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: a753511b032ec454e8a5b281a75d6a84
-  - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 09f2986e969ab234d96147541aa66f46
-  - enabled: 1
-    path: Assets/Scenes/Test1.unity
-    guid: cc0fcac1974319a4e9281a914d77b627
-  - enabled: 1
-    path: Assets/Scenes/Level3.unity
-    guid: 9dcfa1057e8768a4a86881d878ff54ef
-  - enabled: 1
     path: Assets/Scenes/Anim1.unity
     guid: 71cc5ee9902d3394a926234b4b5fa168
-  - enabled: 1
-    path: Assets/Scenes/Anim2.unity
-    guid: 5e765eff0c6422c4894965c74c6cfa00
-  - enabled: 1
-    path: Assets/Scenes/Anim3.unity
-    guid: e4968637d51c0dc4daeab255f6424b1a
   m_configObjects: {}

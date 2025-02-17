@@ -17,7 +17,7 @@ public class AtractionsAnim : MagnetAnim
     private Vector3 oroginalPosTopMagnet;
     private Vector3 oroginalPosBotMagnet;
 
-    public void Start()
+    public void OnEnable()
     {
         oroginalPosTopMagnet = magnetTop.position;
         oroginalPosBotMagnet = magnetBot.position;

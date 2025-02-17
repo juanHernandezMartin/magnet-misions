@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class Goal2 : MonoBehaviour
 {
+    public GameObject canvasAnim;
+    public GameObject canvasGameplay;
+    public GameObject nextObjectToEnable;
+    public GameObject parent;
     public string tagName;
     public string nexteSceneName;
     public MagnetSpawner spawner;
@@ -25,7 +29,7 @@ public class Goal2 : MonoBehaviour
         {
             spawner.magnetsSpawned++;
             audioGoal.Play();
-            int currentProgress = spawner.magnetsSpawned + spawner.magnetsToSpawn * (spawner.currentLevel-1);
+            int currentProgress = spawner.magnetsSpawned + spawner.magnetsToSpawn * (spawner.currentLevel - 1);
             LOLSDK.Instance.SubmitProgress(currentProgress, currentProgress, spawner.magnetsToSpawn * 3);
             AnimateMagnetEnd();
         }
@@ -56,7 +60,10 @@ public class Goal2 : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(nexteSceneName);
+                    canvasAnim.SetActive(true); // Enable the animation canvas
+                    canvasGameplay.SetActive(false); // Disable the gameplay canvas
+                    nextObjectToEnable.SetActive(true);
+                    parent.SetActive(false);
                 }
             }
             else
